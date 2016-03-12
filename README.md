@@ -1,4 +1,4 @@
-# wpt-dashboard
+# royaledex
 
 
 Start the dev server
