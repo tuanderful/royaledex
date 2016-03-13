@@ -18,6 +18,7 @@ export const COMPLETE_TODO = 'COMPLETE_TODO';
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
 export const TOGGLE_TODO = 'TOGGLE_TODO';
 
+
 export const VisibilityFilters = {
     SHOW_ALL: 'SHOW_ALL',
     SHOW_COMPLETED: 'SHOW_COMPLETED',
@@ -47,4 +48,15 @@ export const setVisibilityFilter = (filter) => ({
 export const toggleTodo = (id) => ({
     type: TOGGLE_TODO,
     id,
+});
+
+
+//------------------------------------------------------------------
+
+
+export const SELECT_CARD = 'SELECT_CARD';
+
+export const selectCard = (name) => ({
+    type: SELECT_CARD,
+    name,
 });

@@ -1,5 +1,6 @@
 {
   "knight": {
+    "id": "knight",
     "name": "Knight",
     "rarity": "common",
     "type": "troop",
@@ -18,6 +19,7 @@
     }
   },
   "archers": {
+    "id": "archers",
     "name": "Archers",
     "rarity": "common",
     "type": "troop",
@@ -32,6 +34,7 @@
     "stats": {}
   },
   "bomber": {
+    "id": "bomber",
     "name": "Bomber",
     "rarity": "common",
     "type": "troop",
@@ -46,6 +49,7 @@
     "stats": {}
   },
   "arrows": {
+    "id": "arrows",
     "name": "Arrows",
     "rarity": "common",
     "type": "spell",
@@ -55,6 +59,7 @@
     "stats": {}
   },
   "fireball": {
+    "id": "fireball",
     "name": "Fireball",
     "rarity": "rare",
     "type": "spell",
@@ -64,6 +69,7 @@
     "stats": {}
   },
   "giant": {
+    "id": "giant",
     "name": "Giant",
     "rarity": "rare",
     "type": "troop",
@@ -80,6 +86,7 @@
 
 
   "musketeer": {
+    "id": "musketeer",
     "name": "Musketeer",
     "rarity": "rare",
     "type": "troop",
@@ -94,6 +101,7 @@
     "stats": {}
   },
   "mini_PEKKA": {
+    "id": "mini_PEKKA",
     "name": "Mini P.E.K.K.A.",
     "rarity": "rare",
     "type": "troop",
@@ -108,6 +116,7 @@
     "stats": {}
   },
   "witch": {
+    "id": "witch",
     "name": "Witch",
     "rarity": "epic",
     "type": "troop",
@@ -122,6 +131,7 @@
     "stats": {}
   },
   "skeleton_army": {
+    "id": "skeleton_army",
     "name": "Skeleton Army",
     "rarity": "epic",
     "type": "troop",
@@ -136,6 +146,7 @@
     "stats": {}
   },
   "baby_dragon": {
+    "id": "baby_dragon",
     "name": "Baby Dragon",
     "rarity": "epic",
     "type": "troop",
@@ -150,6 +161,7 @@
     "stats": {}
   },
   "prince": {
+    "id": "prince",
     "name": "Prince",
     "rarity": "epic",
     "type": "troop",
@@ -166,6 +178,7 @@
 
 
   "goblins": {
+    "id": "goblins",
     "name": "Goblins",
     "rarity": "common",
     "type": "troop",
@@ -180,6 +193,7 @@
     "stats": {}
   },
   "spear_goblins": {
+    "id": "spear_goblins",
     "name": "Spear Goblins",
     "rarity": "common",
     "type": "troop",
@@ -194,6 +208,7 @@
     "stats": {}
   },
   "valkyrie": {
+    "id": "valkyrie",
     "name": "Valkyrie",
     "rarity": "rare",
     "type": "troop",
@@ -208,6 +223,7 @@
     "stats": {}
   },
   "goblin_hut": {
+    "id": "goblin_hut",
     "name": "Goblin Hut",
     "rarity": "rare",
     "type": "troop",
@@ -222,6 +238,7 @@
     "stats": {}
   },
   "lightning": {
+    "id": "lightning",
     "name": "Lightning",
     "rarity": "epic",
     "type": "spell",
@@ -231,6 +248,7 @@
     "stats": {}
   },
   "goblin_barrel": {
+    "id": "goblin_barrel",
     "name": "Goblin Barrel",
     "rarity": "epic",
     "type": "spell",
@@ -242,6 +260,7 @@
 
 
   "minions": {
+    "id": "minions",
     "name": "Minions",
     "rarity": "common",
     "type": "troop",
@@ -256,6 +275,7 @@
     "stats": {}
   },
   "skeletons": {
+    "id": "skeletons",
     "name": "Skeletons",
     "rarity": "common",
     "type": "troop",
@@ -270,6 +290,7 @@
     "stats": {}
   },
   "bomb_tower": {
+    "id": "bomb_tower",
     "name": "Bomb Tower",
     "rarity": "rare",
     "type": "troop",
@@ -284,6 +305,7 @@
     "stats": {}
   },
   "tombstone": {
+    "id": "tombstone",
     "name": "Tombstone",
     "rarity": "rare",
     "type": "building",
@@ -293,6 +315,7 @@
     "stats": {}
   },
   "giant_skeleton": {
+    "id": "giant_skeleton",
     "name": "Giant Skeleton",
     "rarity": "epic",
     "type": "troop",
@@ -307,6 +330,7 @@
     "stats": {}
   },
   "balloon": {
+    "id": "balloon",
     "name": "Balloon",
     "rarity": "epic",
     "type": "troop",
@@ -327,6 +351,7 @@
 
 
   "barbarians": {
+    "id": "barbarians",
     "name": "Barbarians",
     "rarity": "common",
     "type": "troop",
@@ -343,6 +368,7 @@
     ]
   },
   "cannon": {
+    "id": "cannon",
     "name": "Cannon",
     "rarity": "common",
     "type": "building",
@@ -352,6 +378,7 @@
     "stats": {}
   },
   "barbarian_hut": {
+    "id": "barbarian_hut",
     "name": "Barbarian Hut",
     "rarity": "rare",
     "type": "building",
@@ -361,6 +388,7 @@
     "stats": {}
   },
   "rocket": {
+    "id": "rocket",
     "name": "Rocket",
     "rarity": "rare",
     "type": "spell",
@@ -370,6 +398,7 @@
     "stats": {}
   },
   "rage": {
+    "id": "rage",
     "name": "Rage",
     "rarity": "epic",
     "type": "spell",
@@ -379,6 +408,7 @@
     "stats": {}
   },
   "x-bow": {
+    "id": "x-bow",
     "name": "X-Bow",
     "rarity": "epic",
     "type": "troop",
@@ -399,6 +429,7 @@
 
 
   "minion_horde": {
+    "id": "minion_horde",
     "name": "Minion Horde",
     "rarity": "common",
     "type": "troop",
@@ -413,6 +444,7 @@
     "stats": {}
   },
   "tesla": {
+    "id": "tesla",
     "name": "Tesla",
     "rarity": "common",
     "type": "building",
@@ -422,6 +454,7 @@
     "stats": {}
   },
   "hog_rider": {
+    "id": "hog_rider",
     "name": "Hog Rider",
     "rarity": "rare",
     "type": "troop",
@@ -436,6 +469,7 @@
     "stats": {}
   },
   "inferno_tower": {
+    "id": "inferno_tower",
     "name": "Inferno Tower",
     "rarity": "rare",
     "type": "building",
@@ -445,6 +479,7 @@
     "stats": {}
   },
   "freeze": {
+    "id": "freeze",
     "name": "Freeze",
     "rarity": "epic",
     "type": "spell",
@@ -454,6 +489,7 @@
     "stats": {}
   },
   "PEKKA": {
+    "id": "PEKKA",
     "name": "P.E.K.K.A.",
     "rarity": "epic",
     "type": "troop",
@@ -476,6 +512,7 @@
 
 
   "zap": {
+    "id": "zap",
     "name": "Zap",
     "rarity": "common",
     "type": "spell",
@@ -485,6 +522,7 @@
     "stats": {}
   },
   "wizard": {
+    "id": "wizard",
     "name": "Wizard",
     "rarity": "rare",
     "type": "troop",
@@ -499,6 +537,7 @@
     "stats": {}
   },
   "mirror": {
+    "id": "mirror",
     "name": "Mirror",
     "rarity": "epic",
     "type": "spell",
@@ -515,6 +554,7 @@
 
 
   "mortar": {
+    "id": "mortar",
     "name": "Mortar",
     "rarity": "common",
     "type": "building",
@@ -524,6 +564,7 @@
     "stats": {}
   },
   "elixir_collector": {
+    "id": "elixir_collector",
     "name": "Elixir Collector",
     "rarity": "rare",
     "type": "building",
@@ -533,6 +574,7 @@
     "stats": {}
   },
   "golem": {
+    "id": "golem",
     "name": "Golem",
     "rarity": "epic",
     "type": "troop",

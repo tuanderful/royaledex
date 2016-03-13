@@ -8,6 +8,8 @@ import App from './components/App';
 
 const store = createStore(todoApp);
 
+require('../styles/main.css');
+
 render(
     <Provider store={store}>
         <App />
