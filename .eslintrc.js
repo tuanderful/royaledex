@@ -4,8 +4,6 @@ module.exports = {
     "react"
   ],
   "rules": {
-    'comma-dangle': 0,
-    'semi': 0,
-    'no-console': 0
+    "indent": [2, 4, {"SwitchCase": 1}]
   }
 };
