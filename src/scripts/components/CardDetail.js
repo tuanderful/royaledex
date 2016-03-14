@@ -16,17 +16,13 @@ const CardDetail = ({ card, onClick }) => {
     return (
         <div style={getStyles()}>
             <img src={imageURL} onClick={onClick} />
-            <Stat card={card} statKey="name" />
-            <Stat card={card} statKey="rarity" />
-            <Stat card={card} statKey="type" />
-            <Stat card={card} statKey="hitSpeed" />
-            <Stat card={card} statKey="targets" />
-            <Stat card={card} statKey="speed" />
-            <Stat card={card} statKey="range" />
-            <Stat card={card} statKey="deployTime" />
-            <Stat card={card} statKey="count" />
-            <Stat card={card} statKey="cost" />
-            <Stat card={card} statKey="unlocks_at" />
+
+            {Object.keys(card).filter((k) => (['id', 'stats', 'text'].indexOf(k) === -1))
+                .map((k, index) => (
+                    <Stat card={card} key={index} statKey={k} />
+                )
+            )}
+
             <i>{card.text}</i>
         </div>
     );

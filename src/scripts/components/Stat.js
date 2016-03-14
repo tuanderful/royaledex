@@ -8,7 +8,7 @@ const PrettyKeyName = {
     targets: 'Targets',
     speed: 'Speed',
     range: 'Range',
-    deployTime: 'DeployTime',
+    deployTime: 'Deploy Time',
     count: 'Count',
     cost: 'Cost',
     unlocks_at: 'Unlocks At',
@@ -18,7 +18,7 @@ const PrettyKeyName = {
 const Stat = ({ card, statKey }) => {
     let value = card[statKey];
 
-    if (statKey === 'range' && card[statKey] === '0') {
+    if (statKey === 'range' && card[statKey] === 0) {
         value = 'melee';
     }
 
