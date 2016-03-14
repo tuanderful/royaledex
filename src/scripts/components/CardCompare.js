@@ -3,7 +3,8 @@ import CardDetail from './CardDetail';
 
 function getStyles() {
     return {
-        background: 'none',
+        width: '660px',
+        float: 'left',
     };
 }
 
@@ -14,7 +15,7 @@ const CardCompare = ({ cards, onCardClick }) => (
               key={index}
               card={card}
               onClick={function _handleClick() {
-                  onCardClick(card.name);
+                  onCardClick(card.id);
               }}
             />
         )}

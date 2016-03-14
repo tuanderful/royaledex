@@ -19,7 +19,7 @@ function getStyles(selected, id) {
 }
 
 
-const CardThumbnail = ({ onClick, selected, name, id }) => (
+const CardThumbnail = ({ onClick, selected, id }) => (
     <li onClick={onClick}
       style={getStyles(selected, id)}
     >

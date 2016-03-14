@@ -1,13 +1,20 @@
 import React, { PropTypes } from 'react';
 import Stat from './Stat';
 
+function getStyles() {
+    return {
+        width: '330px',
+        float: 'left',
+    };
+}
+
 const CardDetail = ({ card, onClick }) => {
     const imageURL = require(`../../images/cards/230/${card.id}.png`);
 
     // TODO: iterate through the card's keys and output. delete non-sensical keys
     // (such as targets, speed) from the data.
     return (
-        <div>
+        <div style={getStyles()}>
             <img src={imageURL} onClick={onClick} />
             <Stat card={card} statKey="name" />
             <Stat card={card} statKey="rarity" />

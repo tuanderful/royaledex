@@ -4,14 +4,21 @@ import CardCompare from '../components/CardCompare';
 
 // const getSelectedCards = (cards) => cards;
 
+const _CARDS_JSON = require('../../../data/cards.json');
+
+// comparator is an array of keys
+function getSelectedCards(comparator) {
+    return comparator.map((key) => _CARDS_JSON[key]);
+}
+
 const mapStateToProps = (state) => ({
-    cards: [state.comparator[0]],
+    cards: getSelectedCards(state.comparator),
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    onCardClick: (name) => {
+    onCardClick: (id) => {
         console.log('delete on', name);
-        dispatch(removeCompareCard(name));
+        dispatch(removeCompareCard(id));
     },
 });
 

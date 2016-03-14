@@ -7,6 +7,7 @@ function getStyles(numCol = 4) {
     return {
         width: `${width}px`,
         listStyleType: 'none',
+        float: 'left',
     };
 }
 
