@@ -10,9 +10,9 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    onCardClick: (name) => {
-        console.log('clicked on', name);
-        dispatch(selectCard(name));
+    onCardClick: (id) => {
+        console.log('clicked on', id);
+        dispatch(selectCard(id));
     },
 });
 

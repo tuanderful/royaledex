@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './Header';
 
 
-import CardGrid from '../containers/CardGrid.container';
+import CardGridContainer from '../containers/CardGrid.container';
+import CardCompareContainer from '../containers/CardCompare.container';
 
 
 // Footer, although it can mutate data, is not dependent on state. It contains FilterLinks, which
@@ -18,7 +19,8 @@ import VisibleTodoList from '../containers/VisibleTodoList';
 const App = () => (
     <div>
         <Header />
-        <CardGrid />
+        <CardGridContainer />
+        <CardCompareContainer />
         <AddTodo />
         <VisibleTodoList />
         <Footer />

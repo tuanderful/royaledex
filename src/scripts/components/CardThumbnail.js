@@ -23,7 +23,6 @@ const CardThumbnail = ({ onClick, selected, name, id }) => (
     <li onClick={onClick}
       style={getStyles(selected, id)}
     >
-        {name}
     </li>
 );
 

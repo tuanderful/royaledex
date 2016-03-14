@@ -2,7 +2,7 @@
 // your store. They are the only source of information for the store.
 //
 // {
-//   type: ADD_TODO,
+//   type: 'ADD_TODO',
 //   text: 'Build my first Redux app'
 // }
 //
@@ -13,11 +13,7 @@
 
 
 // Action types
-export const ADD_TODO = 'ADD_TODO';
-export const COMPLETE_TODO = 'COMPLETE_TODO';
-export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
-export const TOGGLE_TODO = 'TOGGLE_TODO';
-
+import ActionTypes from './Types.js';
 
 export const VisibilityFilters = {
     SHOW_ALL: 'SHOW_ALL',
@@ -28,25 +24,25 @@ export const VisibilityFilters = {
 // Here we define action creators, functions that create actions.
 let nextTodoId = 0;
 export const addTodo = (text) => ({
-    type: ADD_TODO,
+    type: ActionTypes.ADD_TODO,
     id: nextTodoId++,
     text,
 });
 
 // export function completeTodo(index) {
 //     return {
-//         type: COMPLETE_TODO,
+//         type: ActionTypes.COMPLETE_TODO,
 //         index
 //     }
 // }
 
 export const setVisibilityFilter = (filter) => ({
-    type: SET_VISIBILITY_FILTER,
+    type: ActionTypes.SET_VISIBILITY_FILTER,
     filter,
 });
 
 export const toggleTodo = (id) => ({
-    type: TOGGLE_TODO,
+    type: ActionTypes.TOGGLE_TODO,
     id,
 });
 
@@ -54,9 +50,12 @@ export const toggleTodo = (id) => ({
 //------------------------------------------------------------------
 
 
-export const SELECT_CARD = 'SELECT_CARD';
+export const selectCard = (id) => ({
+    type: ActionTypes.SELECT_CARD,
+    id,
+});
 
-export const selectCard = (name) => ({
-    type: SELECT_CARD,
-    name,
+export const removeCompareCard = (id) => ({
+    type: ActionTypes.REMOVE_COMPARE_CARD,
+    id,
 });

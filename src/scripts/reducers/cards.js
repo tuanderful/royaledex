@@ -9,7 +9,7 @@
 //   * Perform side effects like API calls and routing transitions;
 //   * Calling non-pure functions, e.g. Date.now() or Math.random().
 
-import { SELECT_CARD } from '../actions';
+import ActionTypes from '../actions/Types.js';
 
 
 const _CARDS_JSON = require('../../../data/cards.json');
@@ -19,8 +19,8 @@ console.log(CARDS);
 // here is the state of a single card
 const card = (state, action) => {
     switch (action.type) {
-        case SELECT_CARD:
-            if (state.name !== action.name) {
+        case ActionTypes.SELECT_CARD:
+            if (state.id !== action.id) {
                 return state;
             }
             return Object.assign({}, state, {
@@ -34,7 +34,7 @@ const card = (state, action) => {
 // here the state is an array of all cards
 const cards = (state = CARDS, action) => {
     switch (action.type) {
-        case SELECT_CARD:
+        case ActionTypes.SELECT_CARD:
             return state.map(c => card(c, action));
         default:
             return state;

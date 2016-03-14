@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import CardThumbnail from './CardThumbnail';
 import CONST from '../CONST';
 
-function getStyles(numCol) {
+function getStyles(numCol = 4) {
     const width = numCol * ((CONST.THUMB_WIDTH / 2) + CONST.THUMB_MARGIN);
     return {
         width: `${width}px`,
@@ -11,13 +11,13 @@ function getStyles(numCol) {
 }
 
 const CardGrid = ({ cards, onCardClick }) => (
-    <ul style={getStyles(4)}>
+    <ul style={getStyles()}>
         {cards.map((card, index) =>
             <CardThumbnail
               key={index}
               {...card}
               onClick={function _handleClick() {
-                  onCardClick(card.name);
+                  onCardClick(card.id);
               }}
             />
         )}

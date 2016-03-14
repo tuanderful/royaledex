@@ -9,6 +9,7 @@
     "speed": "medium",
     "range": 0,
     "deployTime": 1,
+    "count": 1,
     "cost": 3,
     "unlocks_at": 0,
     "text": "A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.",
@@ -23,15 +24,20 @@
     "name": "Archers",
     "rarity": "common",
     "type": "troop",
-    "hitSpeed": 0,
-    "targets": [""],
-    "speed": "",
-    "range": 0,
-    "deployTime": 0,
+    "hitSpeed": 1.2,
+    "targets": ["air", "ground"],
+    "speed": "medium",
+    "range": 5.5,
+    "deployTime": 1,
+    "count": 2,
     "cost": 3,
     "unlocks_at": 0,
-    "text": "foobar",
-    "stats": {}
+    "text": "A pair of unarmored ranged attackers. They’ll help you with ground and air unit attacks, but you’re on your own with coloring your hair",
+    "stats": {
+      "hp": [125, 137, 151, 166, 182, 200, 220, 241, 265, 291, 320, 351],
+      "damage": [40, 44, 48, 53, 58, 64, 70, 77, 84, 93, 102, 112],
+      "dps": [40, 44, 48, 53, 58, 64, 70, 77, 84, 93, 102, 112]
+    }
   },
   "bomber": {
     "id": "bomber",
