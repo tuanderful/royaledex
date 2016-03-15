@@ -538,6 +538,25 @@
     "text": "foobar",
     "stats": {}
   },
+  "ice_wizard": {
+    "id": "ice_wizard",
+    "name": "Ice Wizard",
+    "rarity": "legendary",
+    "type": "troop",
+    "hitSpeed": 1.2,
+    "targets": ["air", "ground"],
+    "speed": "medium",
+    "range": 6,
+    "deployTime": 1,
+    "cost": 3,
+    "unlocks_at": 5,
+    "text": "This chill caster hails from the far North. He shoots ice shards at enemies, slowing down their movement and attack speed.",
+    "stats": {
+      "hp": [700, 770, 847, 931, 1022, 1120],
+      "damage": [60, 66, 72, 79, 87, 96],
+      "dps": [40, 44, 48, 52, 58, 64]
+    }
+  },
   "mirror": {
     "id": "mirror",
     "name": "Mirror",
@@ -547,6 +566,21 @@
     "unlocks_at": 5,
     "text": "foobar",
     "stats": {}
+  },
+  "poison": {
+    "id": "poison",
+    "name": "Poison",
+    "rarity": "epic",
+    "type": "spell",
+    "radius": 3.5,
+    "duration": 10,
+    "cost": 4,
+    "unlocks_at": 5,
+    "text": "foobar",
+    "stats": {
+      "dps": [40, 44, 48, 53, 59, 64, 70, 77],
+      "towerDps": [16, 18, 20, 22, 24, 26, 28, 31]
+    }
   },
 
 
@@ -589,7 +623,93 @@
     "unlocks_at": 6,
     "text": "foobar",
     "stats": {}
+  },
+
+
+
+
+
+
+
+  "royal_giant": {
+    "id": "royal_giant",
+    "name": "Royal Giant",
+    "rarity": "common",
+    "type": "troop",
+    "hitSpeed": 1.5,
+    "targets": ["buildings"],
+    "speed": "slow",
+    "range": 6,
+    "deployTime": 1,
+    "count": 1,
+    "cost": 6,
+    "unlocks_at": 7,
+    "text": "Sighting his massive cannon at enemy buildings, the Royal Giant comes in like a wrecking ball.",
+    "stats": {
+      "hp": [1200, 1320, 1452, 1596, 1752, 1920, 2112, 2316, 2544, 2796, 3072, 3372],
+      "damage": [65, 71, 78, 86, 94, 104, 114, 125, 137, 139, 153, 182],
+      "dps": [43, 47, 52, 57, 62, 69, 76, 83, 91, 92, 102, 121]
+    }
+  },
+  "three_musketeers": {
+    "id": "three_musketeers",
+    "name": "Three Musketeers",
+    "rarity": "rare",
+    "type": "troop",
+    "hitSpeed": 1.1,
+    "targets": ["air", "ground"],
+    "speed": "medium",
+    "range": 6.5,
+    "deployTime": 1,
+    "count": 3,
+    "cost": 10,
+    "unlocks_at": 7,
+    "text": "Trio of powerful, independent markswomen, fighting for justice and honor. Disrespecting them would not be just a mistake, it would be a cardinal sin!",
+    "stats": {
+      "hp": [340, 374, 411, 452, 496, 544, 598, 656, 720, 792],
+      "damage": [100, 110, 121, 133, 146, 160, 176, 193, 212, 233],
+      "dps": [90, 100, 110, 120, 132, 145, 160, 175, 192, 211]
+    }
+  },
+  "princess": {
+    "id": "princess",
+    "name": "Princess",
+    "rarity": "legendary",
+    "type": "troop",
+    "hitSpeed": 3,
+    "targets": ["air", "ground"],
+    "speed": "medium",
+    "range": 9.5,
+    "deployTime": 1,
+    "count": 1,
+    "cost": 3,
+    "unlocks_at": 7,
+    "text": "Shoots a volley of flaming arrows halfway across the Arena. The Princess is afraid of germs, so keep the rabble away from her!",
+    "stats": {
+      "hp": [240, 264, 290, 319, 350, 384],
+      "damage": [150, 165, 181, 199, 219, 240],
+      "dps": [50, 55, 60, 66, 73, 80]
+    }
+  },
+  "dark_prince": {
+    "id": "dark_prince",
+    "name": "Dark Prince",
+    "rarity": "epic",
+    "type": "troop",
+    "hitSpeed": 1.5,
+    "targets": ["ground"],
+    "speed": "medium",
+    "range": 0,
+    "deployTime": 1,
+    "count": 1,
+    "cost": 4,
+    "unlocks_at": 7,
+    "text": "Dealing area damage with each swing and double after charging, the Dark Prince is a formidable fighter. To harm his squishy core, break his shield first.",
+    "stats": {
+      "hp": [700, 770, 847, 931, 1022, 1120, 1232, 1344],
+      "shield": [200, 220, 242, 266, 292, 320, 352, 384],
+      "damage": [125, 137, 151, 166, 182, 200, 220, 240],
+      "dps": [83, 91, 100, 110, 121, 133, 146, 159]
+    }
   }
-
-
 }
