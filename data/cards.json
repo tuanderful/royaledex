@@ -4,15 +4,16 @@
     "name": "Knight",
     "rarity": "common",
     "type": "troop",
+    "cost": 3,
+    "unlocks_at": 0,
+    "text": "A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.",
+
     "hitSpeed": 1.1,
     "targets": ["ground"],
     "speed": "medium",
     "range": 0,
     "deployTime": 1,
     "count": 1,
-    "cost": 3,
-    "unlocks_at": 0,
-    "text": "A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.",
     "stats": {
       "hp": [600, 660, 729, 798, 876, 960, 1056, 1158, 1272, 1398, 1536, 1686],
       "damage": [75, 82, 90, 99, 109, 120, 132, 144, 159, 174, 192, 210],
@@ -24,15 +25,15 @@
     "name": "Archers",
     "rarity": "common",
     "type": "troop",
+    "cost": 3,
+    "unlocks_at": 0,
+    "text": "A pair of unarmored ranged attackers. They’ll help you with ground and air unit attacks, but you’re on your own with coloring your hair",
     "hitSpeed": 1.2,
     "targets": ["air", "ground"],
     "speed": "medium",
     "range": 5.5,
     "deployTime": 1,
     "count": 2,
-    "cost": 3,
-    "unlocks_at": 0,
-    "text": "A pair of unarmored ranged attackers. They’ll help you with ground and air unit attacks, but you’re on your own with coloring your hair",
     "stats": {
       "hp": [125, 137, 151, 166, 182, 200, 220, 241, 265, 291, 320, 351],
       "damage": [40, 44, 48, 53, 58, 64, 70, 77, 84, 93, 102, 112],
@@ -44,15 +45,20 @@
     "name": "Bomber",
     "rarity": "common",
     "type": "troop",
-    "hitSpeed": 0,
-    "targets": [""],
-    "speed": "",
-    "range": 0,
-    "deployTime": 0,
     "cost": 3,
     "unlocks_at": 0,
-    "text": "foobar",
-    "stats": {}
+    "text": "Small, lightly protected skeleton that throws bombs. Deals damage that can wipe out a swarm of enemies.",
+    "hitSpeed": 2,
+    "targets": ["ground"],
+    "speed": "medium",
+    "range": 5,
+    "deployTime": 1,
+    "count": 1,
+    "stats": {
+      "hp": [150, 165, 181, 199, 219, 240, 264, 289, 318, 349, 384, 421],
+      "damage": [100, 110, 121, 133, 146, 160, 176, 193, 212, 233, 256, 281],
+      "dps": [52, 55, 63, 70, 76, 84, 92, 96, 111, 122, 128, 147]
+    }
   },
   "arrows": {
     "id": "arrows",
@@ -61,9 +67,15 @@
     "type": "spell",
     "cost": 3,
     "unlocks_at": 0,
-    "text": "foobar",
-    "stats": {}
+    "text": "Arrows pepper a large area damaging everyone hit. Reduced damage to crown towers.",
+    "radius": 5,
+    "stats": {
+      "damage": [115, 126, 139, 152, 168, 184, 202, 221, 243, 268, 295, 323],
+      "towerDamage": [46, 51, 56, 61, 67, 74, 81, 89, 98, 107, 118, 130]
+    }
   },
+
+
   "fireball": {
     "id": "fireball",
     "name": "Fireball",
@@ -71,14 +83,19 @@
     "type": "spell",
     "cost": 4,
     "unlocks_at": 0,
-    "text": "foobar",
-    "stats": {}
+    "text": "Annnnnd… Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.",
+    "radius": 2.5,
+    "stats": {
+      "hp": [325, 357, 396, 432, 476, 520, 572, 627, 689, 757],
+      "damage": [130, 143, 158, 173, 190, 208, 229, 251, 276, 303]
+    }
   },
   "giant": {
     "id": "giant",
     "name": "Giant",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -96,6 +113,7 @@
     "name": "Musketeer",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -111,6 +129,7 @@
     "name": "Mini P.E.K.K.A.",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -126,6 +145,7 @@
     "name": "Witch",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -141,6 +161,7 @@
     "name": "Skeleton Army",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -156,6 +177,7 @@
     "name": "Baby Dragon",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -171,6 +193,7 @@
     "name": "Prince",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -188,6 +211,7 @@
     "name": "Goblins",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -203,6 +227,7 @@
     "name": "Spear Goblins",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -218,6 +243,7 @@
     "name": "Valkyrie",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -233,6 +259,7 @@
     "name": "Goblin Hut",
     "rarity": "rare",
     "type": "building",
+
     "deployTime": 0,
     "cost": 5,
     "unlocks_at": 1,
@@ -244,6 +271,7 @@
     "name": "Lightning",
     "rarity": "epic",
     "type": "spell",
+
     "cost": 6,
     "unlocks_at": 1,
     "text": "foobar",
@@ -254,6 +282,7 @@
     "name": "Goblin Barrel",
     "rarity": "epic",
     "type": "spell",
+
     "cost": 0,
     "unlocks_at": 1,
     "text": "foobar",
@@ -266,6 +295,7 @@
     "name": "Minions",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -281,6 +311,7 @@
     "name": "Skeletons",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -296,6 +327,7 @@
     "name": "Bomb Tower",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -311,6 +343,7 @@
     "name": "Tombstone",
     "rarity": "rare",
     "type": "building",
+
     "cost": 0,
     "unlocks_at": 2,
     "text": "foobar",
@@ -321,6 +354,7 @@
     "name": "Giant Skeleton",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -336,6 +370,7 @@
     "name": "Balloon",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -357,6 +392,7 @@
     "name": "Barbarians",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -374,6 +410,7 @@
     "name": "Cannon",
     "rarity": "common",
     "type": "building",
+
     "cost": 6,
     "unlocks_at": 3,
     "text": "foobar",
@@ -384,6 +421,7 @@
     "name": "Barbarian Hut",
     "rarity": "rare",
     "type": "building",
+
     "cost": 7,
     "unlocks_at": 3,
     "text": "foobar",
@@ -394,6 +432,7 @@
     "name": "Rocket",
     "rarity": "rare",
     "type": "spell",
+
     "cost": 6,
     "unlocks_at": 3,
     "text": "foobar",
@@ -404,6 +443,7 @@
     "name": "Rage",
     "rarity": "epic",
     "type": "spell",
+
     "cost": 3,
     "unlocks_at": 3,
     "text": "foobar",
@@ -414,6 +454,7 @@
     "name": "X-Bow",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -435,6 +476,7 @@
     "name": "Minion Horde",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -450,6 +492,7 @@
     "name": "Tesla",
     "rarity": "common",
     "type": "building",
+
     "cost": 0,
     "unlocks_at": 4,
     "text": "foobar",
@@ -460,6 +503,7 @@
     "name": "Hog Rider",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -475,6 +519,7 @@
     "name": "Inferno Tower",
     "rarity": "rare",
     "type": "building",
+
     "cost": 0,
     "unlocks_at": 4,
     "text": "foobar",
@@ -485,6 +530,7 @@
     "name": "Freeze",
     "rarity": "epic",
     "type": "spell",
+
     "cost": 4,
     "unlocks_at": 4,
     "text": "foobar",
@@ -495,6 +541,7 @@
     "name": "P.E.K.K.A.",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -518,6 +565,7 @@
     "name": "Zap",
     "rarity": "common",
     "type": "spell",
+
     "cost": 2,
     "unlocks_at": 5,
     "text": "foobar",
@@ -528,6 +576,7 @@
     "name": "Wizard",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -543,6 +592,7 @@
     "name": "Ice Wizard",
     "rarity": "legendary",
     "type": "troop",
+
     "hitSpeed": 1.2,
     "targets": ["air", "ground"],
     "speed": "medium",
@@ -562,6 +612,7 @@
     "name": "Mirror",
     "rarity": "epic",
     "type": "spell",
+
     "cost": 0,
     "unlocks_at": 5,
     "text": "foobar",
@@ -572,6 +623,7 @@
     "name": "Poison",
     "rarity": "epic",
     "type": "spell",
+
     "radius": 3.5,
     "duration": 10,
     "cost": 4,
@@ -594,6 +646,7 @@
     "name": "Mortar",
     "rarity": "common",
     "type": "building",
+
     "cost": 6,
     "unlocks_at": 6,
     "text": "foobar",
@@ -604,6 +657,7 @@
     "name": "Elixir Collector",
     "rarity": "rare",
     "type": "building",
+
     "cost": 5,
     "unlocks_at": 6,
     "text": "foobar",
@@ -614,6 +668,7 @@
     "name": "Golem",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 0,
     "targets": [""],
     "speed": "",
@@ -636,6 +691,7 @@
     "name": "Royal Giant",
     "rarity": "common",
     "type": "troop",
+
     "hitSpeed": 1.5,
     "targets": ["buildings"],
     "speed": "slow",
@@ -656,6 +712,7 @@
     "name": "Three Musketeers",
     "rarity": "rare",
     "type": "troop",
+
     "hitSpeed": 1.1,
     "targets": ["air", "ground"],
     "speed": "medium",
@@ -676,6 +733,7 @@
     "name": "Princess",
     "rarity": "legendary",
     "type": "troop",
+
     "hitSpeed": 3,
     "targets": ["air", "ground"],
     "speed": "medium",
@@ -696,6 +754,7 @@
     "name": "Dark Prince",
     "rarity": "epic",
     "type": "troop",
+
     "hitSpeed": 1.5,
     "targets": ["ground"],
     "speed": "medium",

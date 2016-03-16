@@ -1,4 +1,6 @@
 import React from 'react';
+import CONST from '../CONST.js';
+
 
 const style = {
     color: 'white',
@@ -7,7 +9,7 @@ const style = {
     textShadow: '0px 1px 0px red',
     background: '#488bf4',
     marginTop: '0',
-    height: '30px',
+    height: `${CONST.HEADER_HEIGHT}px`,
     padding: '10px',
 };
 

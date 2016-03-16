@@ -8,6 +8,7 @@ const PrettyKeyName = {
     targets: 'Targets',
     speed: 'Speed',
     range: 'Range',
+    radius: 'Radius',
     deployTime: 'Deploy Time',
     count: 'Count',
     cost: 'Cost',
