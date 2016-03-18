@@ -57,3 +57,14 @@ html, body {
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+button {
+  border: 0;
+}
+
+
+.accessible {
+  text-indent: -10000px;
+}

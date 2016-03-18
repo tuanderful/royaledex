@@ -29,6 +29,12 @@ $THUMB_MARGIN: 10px;
         }
     }
 
+    &.inactive {
+        filter: grayscale(20%);
+        -webkit-filter: grayscale(20%);
+        opacity: 50%;
+    }
+
     img {
         position: relative;
         z-index: 1;

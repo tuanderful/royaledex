@@ -9,6 +9,7 @@ import App from './components/App';
 const store = createStore(appReducers);
 
 require('../styles/main.css');
+require('../styles/normalize.css');
 
 render(
     <Provider store={store}>

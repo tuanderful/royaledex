@@ -1,4 +1,7 @@
 .Container {
     background: #636a7c;
-    padding: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 8px;
 }
