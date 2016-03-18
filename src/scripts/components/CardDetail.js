@@ -3,6 +3,14 @@ import Stat from './Stat';
 import Container from './Container';
 
 
+function getContainerStyles() {
+    return {
+        width: '330px',
+        float: 'left',
+        marginRight: '20px',
+        textAlign: 'center',
+    };
+}
 
 const CardDetail = ({ card, onClick }) => {
     const imageURL = require(`../../images/cards/230/${card.id}.png`);
@@ -10,7 +18,7 @@ const CardDetail = ({ card, onClick }) => {
     // TODO: iterate through the card's keys and output. delete non-sensical keys
     // (such as targets, speed) from the data.
     return (
-        <Container>
+        <Container styles={getContainerStyles()}>
             <img src={imageURL} onClick={onClick} />
 
             {Object.keys(card).filter((k) => (['id', 'stats', 'text'].indexOf(k) === -1))

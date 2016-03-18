@@ -3,7 +3,7 @@ import CardThumbnail from './CardThumbnail';
 import CONST from '../CONST';
 
 function getStyles(numCol = 4) {
-    const width = numCol * ((CONST.THUMB_WIDTH / 2) + CONST.THUMB_MARGIN);
+    const width = numCol * ((CONST.THUMB_WIDTH / 2) + (2 * CONST.THUMB_MARGIN));
     return {
         width: `${width}px`,
         listStyleType: 'none',

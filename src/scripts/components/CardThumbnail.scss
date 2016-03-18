@@ -1,0 +1,36 @@
+$THUMB_WIDTH: 230px;
+$THUMB_HEIGHT: 276px;
+$THUMB_MARGIN: 10px;
+
+.CardThumbnail {
+    width: $THUMB_WIDTH / 2;
+    height: $THUMB_HEIGHT / 2;
+    float: left;
+    margin: $THUMB_MARGIN;
+    position: relative;
+
+    &.selected {
+        margin: 0;
+        border: 1px solid #054346;
+        padding: $THUMB_MARGIN - 1;
+        background: #353399;
+        border-radius: 8px;
+
+        .glow {
+            top: 17px;
+            left: 16px;
+            position: absolute;
+            width: 101px;
+            height: 124px;
+            border-radius: 0px;
+            background: #63f0f6;
+            box-shadow: 0 0 16px 8px #65f5fc;
+            z-index: 0;
+        }
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+}

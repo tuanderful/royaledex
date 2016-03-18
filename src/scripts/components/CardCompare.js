@@ -6,7 +6,7 @@ function getStyles() {
     const topOffset = CONST.HEADER_HEIGHT + 20 + 5;
 
     return {
-        width: '720px',
+        width: '760px',
         position: 'fixed',
         top: `${topOffset}px`,
         right: '0',
