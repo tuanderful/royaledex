@@ -20,6 +20,7 @@ const CardDetailHeader = ({ card, onClose }) => (
 
 CardDetailHeader.propTypes = {
     card: PropTypes.object.isRequired,
+    onClose: PropTypes.func.isRequired,
 };
 
 export default CardDetailHeader;

@@ -8,9 +8,11 @@ const _CARDS_JSON = require('../../../data/cards.json');
 
 // comparator is an array of keys
 function getSelectedCards(comparator) {
+    console.log(comparator);
     return comparator.map((key) => _CARDS_JSON[key]);
 }
 
+// TODO: instead of passing in the comparator, just pass in cards and filter for selected cards.
 const mapStateToProps = (state) => ({
     cards: getSelectedCards(state.comparator),
 });

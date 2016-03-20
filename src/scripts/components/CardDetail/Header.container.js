@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 import { removeCompareCard } from '../../actions';
 import Header from './Header';
 
+// NOTE: is this needed?
 const mapStateToProps = (state) => (state);
 
 const mapDispatchToProps = (dispatch) => ({
     onClose: (id) => {
-        console.log('CLOSING on', id);
         dispatch(removeCompareCard(id));
     },
 });

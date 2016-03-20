@@ -59,3 +59,8 @@ export const removeCompareCard = (id) => ({
     type: ActionTypes.REMOVE_COMPARE_CARD,
     id,
 });
+
+export const toggleCardSelection = (id) => ({
+    type: ActionTypes.TOGGLE_CARD_SELECTION,
+    id,
+});

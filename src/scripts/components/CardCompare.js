@@ -27,6 +27,7 @@ const CardCompare = ({ cards, onCardClick }) => (
         {cards.map((card, index) =>
             <Container styles={getContainerStyles()} key={index}>
                 <CardDetail
+                  position={index}
                   card={card}
                   onClick={function _handleClick() {
                       console.log('card detail clicked');

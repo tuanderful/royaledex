@@ -6,8 +6,14 @@ import CardDetailHeaderContainer from './Header.container.js';
 
 require('./_styles.scss');
 
-const CardDetail = ({ card }) => (
-    <div className="CardDetail">
+function getStyles(position) {
+    return {
+        right: `${position * 354}px`,
+    };
+}
+
+const CardDetail = ({ card, position }) => (
+    <div className="CardDetail" style={getStyles(position)}>
         <CardDetailHeaderContainer card={card} />
         <CardDetailSummary card={card} />
         <CardDetailStats card={card} />
@@ -16,8 +22,8 @@ const CardDetail = ({ card }) => (
 
 
 CardDetail.propTypes = {
+    position: PropTypes.number.isRequired,
     card: PropTypes.object.isRequired,
-    onClick: PropTypes.func.isRequired,
 };
 
 export default CardDetail;

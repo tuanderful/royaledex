@@ -11,18 +11,30 @@
 
 import ActionTypes from '../actions/Types.js';
 
-
 const _CARDS_JSON = require('../../../data/cards.json');
-const CARDS = Object.keys(_CARDS_JSON).map((key) => _CARDS_JSON[key]);
-console.log(CARDS);
+
+// HACK - mark knight as selected
+_CARDS_JSON.knight.selected = true;
+
+const initialState = Object.keys(_CARDS_JSON).map((key) => _CARDS_JSON[key]);
+
 
 // here is the state of a single card
 const card = (state, action) => {
+    if (state.id !== action.id) {
+        return state;
+    }
+
     switch (action.type) {
         case ActionTypes.SELECT_CARD:
-            if (state.id !== action.id) {
-                return state;
-            }
+            return Object.assign({}, state, {
+                selected: true,
+            });
+        case ActionTypes.REMOVE_COMPARE_CARD:
+            return Object.assign({}, state, {
+                selected: false,
+            });
+        case ActionTypes.TOGGLE_CARD_SELECTION:
             return Object.assign({}, state, {
                 selected: !state.selected,
             });
@@ -32,9 +44,11 @@ const card = (state, action) => {
 };
 
 // here the state is an array of all cards
-const cards = (state = CARDS, action) => {
+const cards = (state = initialState, action) => {
     switch (action.type) {
         case ActionTypes.SELECT_CARD:
+        case ActionTypes.REMOVE_COMPARE_CARD:
+        case ActionTypes.TOGGLE_CARD_SELECTION:
             return state.map(c => card(c, action));
         default:
             return state;
