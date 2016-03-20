@@ -6,10 +6,14 @@ const styles = {
     float: 'right',
 };
 
-const CardDetailHeader = ({ card }) => (
+const CardDetailHeader = ({ card, onClose }) => (
     <div className="Header">
         header {card.name}
-        <Close styles={styles} />
+        <Close styles={styles}
+          onClick={function _handleClick() {
+              onClose(card.id);
+          }}
+        />
     </div>
 );
 

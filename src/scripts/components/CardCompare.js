@@ -25,11 +25,11 @@ function getContainerStyles() {
 const CardCompare = ({ cards, onCardClick }) => (
     <ul style={getStyles()}>
         {cards.map((card, index) =>
-            <Container styles={getContainerStyles()}>
+            <Container styles={getContainerStyles()} key={index}>
                 <CardDetail
-                  key={index}
                   card={card}
                   onClick={function _handleClick() {
+                      console.log('card detail clicked');
                       onCardClick(card.id);
                   }}
                 />

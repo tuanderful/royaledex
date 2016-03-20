@@ -8,12 +8,12 @@ const comparator = (state = initialState, action) => {
 
     switch (action.type) {
         case ActionTypes.SELECT_CARD:
-            console.log('adding comparison', action);
 
-            if (state.length === 1) {
-                newState.push(action.id);
-            } else if (state.length === 2) {
+            // if we're already comparing two, override the last slot.
+            if (state.length === 2) {
                 newState[1] = action.id;
+            } else {
+                newState.push(action.id);
             }
 
             return newState;
