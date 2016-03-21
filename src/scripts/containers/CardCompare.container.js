@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { removeCompareCard } from '../actions';
+import { removeCardToCompare } from '../actions';
 import CardCompare from '../components/CardCompare';
 
 function _getSelectedCards(cards) {
@@ -12,7 +12,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
     onCardClick: (id) => {
-        dispatch(removeCompareCard(id));
+        dispatch(removeCardToCompare(id));
     },
 });
 

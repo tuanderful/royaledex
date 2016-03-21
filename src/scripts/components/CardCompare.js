@@ -30,7 +30,6 @@ const CardCompare = ({ cards, onCardClick }) => (
                   position={index}
                   card={card}
                   onClick={function _handleClick() {
-                      console.log('card detail clicked');
                       onCardClick(card.id);
                   }}
                 />

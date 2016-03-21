@@ -11,7 +11,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
     onCardClick: (id) => {
-        console.log('clicked on', id);
         dispatch(toggleCardSelection(id));
     },
 });
