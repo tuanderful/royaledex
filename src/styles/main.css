@@ -46,7 +46,9 @@ html, body {
 }
 
 
-
+/*
+ * Applicable to the entire app
+ */
 @font-face {
   font-family: 'supercell-magicregular';
   src: url('../fonts/supercell-magic.eot');
@@ -60,6 +62,7 @@ html, body {
 
 
 
+
 button {
   border: 0;
 }
@@ -67,4 +70,17 @@ button {
 
 .accessible {
   text-indent: -10000px;
+}
+
+h3 {
+    font-family: 'supercell-magicregular';
+    font-size: 20px;
+
+    color: white;
+    text-shadow:
+       0px  3px 0 #000,
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
 }

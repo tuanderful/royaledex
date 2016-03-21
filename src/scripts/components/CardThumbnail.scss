@@ -38,5 +38,16 @@ $THUMB_MARGIN: 10px;
     img {
         position: relative;
         z-index: 1;
+
+        &:active {
+            width: ($THUMB_WIDTH / 2) - 2;
+            height: ($THUMB_HEIGHT / 2) - 2;
+            top: 1px;
+            left: 1px;
+        }
+    }
+
+    :hover {
+        cursor: pointer;
     }
 }

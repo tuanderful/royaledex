@@ -24,7 +24,7 @@ const Close = ({ onClick, size, styles }) => {
     }
 
     return (
-        <button className="accessible" style={style} onClick={onClick}>
+        <button className="Close accessible" style={style} onClick={onClick}>
             <span></span>close
         </button>
     );

@@ -1,5 +1,43 @@
 $BORDER_RADIUS: 7px;
 
+@mixin supercell-strong {
+    font-family: 'supercell-magicregular';
+    color: white;
+    text-shadow:
+       0px  3px 0 #000,
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+}
+
+@mixin supercell-medium {
+    font-family: 'supercell-magicregular';
+    color: white;
+    text-shadow:
+       0px  2px 0 #000,
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+}
+
+@mixin supercell-light {
+    font-family: 'supercell-magicregular';
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+}
+
+@mixin supercell-plain {
+    font-family: 'supercell-magicregular';
+    font-size: 12px;
+    color: #666;
+}
+
 .CardDetail {
     .Summary {
         background: rgba(222,235,241,1);
@@ -18,14 +56,53 @@ $BORDER_RADIUS: 7px;
 
         .classification {
             border-radius: $BORDER_RADIUS;
+            margin: 10px 15px;
+            padding: 5px 10px;
+            text-align: left;
+
+            @include supercell-medium;
+
+            .rarity {
+
+            }
+            .type {
+                float: right;
+            }
 
             &.rare {
                 background: #fda03c;
-                margin: 10px 20px;
-                padding: 5px;
+            }
+
+            &.common {
+                background: #666;
+            }
+
+            &.epic {
+                background: #cc33ff;
             }
         }
 
+    }
+
+    .caption {
+        @include supercell-plain;
+        padding: 0 25px;
+        margin-bottom: 0;
+    }
+
+    .Header {
+        position: relative;
+
+        h3 {
+            margin: 0 0 10px 0;
+            line-height: 38px;
+        }
+
+        .Close {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 
     .Stats {

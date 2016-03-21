@@ -2,14 +2,10 @@ import React, { PropTypes } from 'react';
 
 import Close from '../Core/Close';
 
-const styles = {
-    float: 'right',
-};
-
 const CardDetailHeader = ({ card, onClose }) => (
     <div className="Header">
-        header {card.name}
-        <Close styles={styles}
+        <h3>{card.name}</h3>
+        <Close
           onClick={function _handleClick() {
               onClose(card.id);
           }}
