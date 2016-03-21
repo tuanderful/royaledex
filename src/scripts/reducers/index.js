@@ -14,15 +14,12 @@ import { combineReducers } from 'redux';
 import todos from './todos';
 import visibilityFilter from './visibilityFilter';
 import cards from './cards';
-import comparator from './comparator';
-
 
 // When you combine reducers, it adds reducers as keys onto the state object used in the containers.
 const appReducers = combineReducers({
     visibilityFilter,
     todos,
     cards,
-    comparator,
 });
 
 export default appReducers;

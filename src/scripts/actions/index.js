@@ -29,13 +29,6 @@ export const addTodo = (text) => ({
     text,
 });
 
-// export function completeTodo(index) {
-//     return {
-//         type: ActionTypes.COMPLETE_TODO,
-//         index
-//     }
-// }
-
 export const setVisibilityFilter = (filter) => ({
     type: ActionTypes.SET_VISIBILITY_FILTER,
     filter,
@@ -50,13 +43,13 @@ export const toggleTodo = (id) => ({
 //------------------------------------------------------------------
 
 
-export const selectCard = (id) => ({
-    type: ActionTypes.SELECT_CARD,
+export const addCardToCompare = (id) => ({
+    type: ActionTypes.ADD_CARD_TO_COMPARE,
     id,
 });
 
-export const removeCompareCard = (id) => ({
-    type: ActionTypes.REMOVE_COMPARE_CARD,
+export const removeCardToCompare = (id) => ({
+    type: ActionTypes.REMOVE_CARD_TO_COMPARE,
     id,
 });
 
