@@ -25,7 +25,7 @@ const Stat = ({ card, statKey }) => {
 
     return (
         <p>
-            {PrettyKeyName[statKey]}{": "}{value}
+            {PrettyKeyName[statKey]}: {value}
         </p>
     );
 };

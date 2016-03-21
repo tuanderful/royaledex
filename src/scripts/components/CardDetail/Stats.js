@@ -1,10 +1,13 @@
 import React, { PropTypes } from 'react';
 import Stat from './Stat';
 
+const STATS_TO_IGNORE = ['id', 'stats', 'text', 'name', 'rarity', 'type', 'cost'];
 
 const CardDetailStats = ({ card }) => (
     <div className="Stats">
-        {Object.keys(card).filter((k) => (['id', 'stats', 'text'].indexOf(k) === -1))
+        {Object.keys(card)
+            // filter out the stats to ignore
+            .filter((k) => (!STATS_TO_IGNORE.includes(k)))
             .map((k, index) => (
                 <Stat card={card} key={index} statKey={k} />
             )

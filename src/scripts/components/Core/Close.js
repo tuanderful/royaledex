@@ -1,30 +1,18 @@
 import React, { PropTypes } from 'react';
 
+require('./Close.scss');
+
+// TODO: make Close extend from an Icon class
 const Close = ({ onClick, size, styles }) => {
     const closeURL = require('../../../images/icons/close.png');
 
     const style = Object.assign({}, styles, {
-        background: `url(${closeURL})`,
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url(${closeURL})`,
+        backgroundColor: '#636a7c',
     });
 
-    if (size === 'large') {
-        Object.assign(style, {
-            width: '76px',
-            height: '77px',
-
-        });
-    } else {
-        Object.assign(style, {
-            width: '38px',
-            height: '38px',
-
-        });
-    }
-
     return (
-        <button className="Close accessible" style={style} onClick={onClick}>
+        <button className={`Close accessible ${size}`} style={style} onClick={onClick}>
             <span></span>close
         </button>
     );
