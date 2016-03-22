@@ -19,8 +19,13 @@ _CARDS_JSON.knight.selected = true;
 
 
 // 2. Our state is an array
-const initialState = Object.keys(_CARDS_JSON).map((key) => _CARDS_JSON[key]);
-
+const initialState = Object.keys(_CARDS_JSON).map((key) => (
+    Object.assign({}, _CARDS_JSON[key], {
+        // append these attributes, prefixed with an underscore, that are user-specific.
+        // TODO: read/write these to local storage
+        _level: 1,
+    })
+));
 
 
 // here is the state of a single card

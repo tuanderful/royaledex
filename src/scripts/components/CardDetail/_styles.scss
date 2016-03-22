@@ -115,4 +115,31 @@ $BORDER_RADIUS: 7px;
             margin: 0;
         }
     }
+
+    .cardImage {
+        position: relative;
+
+        img {
+            position: relative;
+            z-index: 0;
+        }
+    }
+
+    .level {
+        background-color: rgba(0, 0, 0, 0.2);
+        top: 224px;
+        left: 71px;
+
+        width: 188px;
+        position: absolute;
+        z-index: 1;
+
+        height: 30px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+        &.rare {
+            background-color: rgab(207, 97, 16, 0.2);
+        }
+    }
 }

@@ -9,7 +9,11 @@ const CardDetailSummary = ({ card }) => {
 
     return (
         <div className="Summary">
-            <img src={imageURL} />
+
+            <div className="cardImage">
+                <img src={imageURL} />
+                <div className="level">Level {card._level}</div>
+            </div>
 
             <div className={classificationClassName}>
                 <span className="rarity">{toProper(card.rarity)}</span>

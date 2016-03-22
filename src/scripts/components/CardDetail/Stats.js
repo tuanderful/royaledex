@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Stat from './Stat';
 
-const STATS_TO_IGNORE = ['id', 'stats', 'text', 'name', 'rarity', 'type', 'cost'];
+const STATS_TO_IGNORE = ['id', 'stats', 'text', 'name', 'rarity', 'type', 'cost', '_level'];
 
 const CardDetailStats = ({ card }) => (
     <div className="Stats">
