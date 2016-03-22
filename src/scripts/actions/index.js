@@ -57,3 +57,15 @@ export const toggleCardSelection = (id) => ({
     type: ActionTypes.TOGGLE_CARD_SELECTION,
     id,
 });
+
+
+//------------------------------------------------------------------
+export const increaseCardLevel = (id) => ({
+    type: ActionTypes.INCREASE_CARD_LEVEL,
+    id,
+});
+
+export const decreaseCardLevel = (id) => ({
+    type: ActionTypes.DECREASE_CARD_LEVEL,
+    id,
+});

@@ -21,11 +21,15 @@ _CARDS_JSON.knight.selected = true;
 // 2. Our state is an array
 const initialState = Object.keys(_CARDS_JSON).map((key) => _CARDS_JSON[key]);
 
+
+
 // here is the state of a single card
 const card = (state, action) => {
     if (state.id !== action.id) {
         return state;
     }
+
+    let newLevel;
 
     switch (action.type) {
         case ActionTypes.ADD_CARD_TO_COMPARE:
@@ -40,6 +44,18 @@ const card = (state, action) => {
             return Object.assign({}, state, {
                 selected: !state.selected,
             });
+        case ActionTypes.INCREASE_CARD_LEVEL:
+            // TODO: guard against out of bounds
+            newLevel = state._level + 1;
+            return Object.assign({}, state, {
+                _level: newLevel,
+            });
+        case ActionTypes.DECREASE_CARD_LEVEL:
+            // TODO: guard against out of bounds
+            newLevel = state._level - 1;
+            return Object.assign({}, state, {
+                _level: newLevel,
+            });
         default:
             return state;
     }
@@ -51,7 +67,10 @@ const cards = (state = initialState, action) => {
         case ActionTypes.ADD_CARD_TO_COMPARE:
         case ActionTypes.REMOVE_CARD_TO_COMPARE:
         case ActionTypes.TOGGLE_CARD_SELECTION:
+        case ActionTypes.INCREASE_CARD_LEVEL:
+        case ActionTypes.DECREASE_CARD_LEVEL:
             return state.map(c => card(c, action));
+
         default:
             return state;
     }
